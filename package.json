@@ -1,0 +1,44 @@
+{
+  "name": "license-cli",
+  "version": "0.0.1",
+  "description": "CLI Tool to generate license files",
+  "type": "module",
+  "files": [
+    "templates/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "postinstall": "npm run build"
+  },
+  "bin": "./build/license-cli.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/glweems/license-cli.git"
+  },
+  "keywords": [
+    "CLI",
+    "starter",
+    "JSON",
+    "license",
+    "generator"
+  ],
+  "author": "Garrett Weems <gwgraphicdesign@gmail.com> (https://glweems.com)",
+  "bugs": {
+    "url": "https://github.com/glweems/license-cli/issues"
+  },
+  "homepage": "https://github.com/glweems/license-cli#readme",
+  "dependencies": {
+    "boxen": "^6.2.1",
+    "chalk": "^5.0.0",
+    "prompts": "^2.4.2",
+    "typescript": "^4.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.8",
+    "@types/prompts": "^2.0.14",
+    "prettier": "^2.5.1",
+    "semantic-release": "^18.0.1"
+  },
+  "license": "mit"
+}
